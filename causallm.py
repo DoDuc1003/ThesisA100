@@ -4,15 +4,6 @@ huggingface_hub.login("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")
 
 import json
 
-# file_path = '/workspace/nlplab/DucDo/ViSquad/data_train.json'
-
-# with open(file_path, 'r') as file:
-#     data_train = json.load(file)
-    
-# file_path = '/workspace/nlplab/DucDo/ViSquad/data_dev.json'
-# with open(file_path, 'r') as file:
-#     data_dev = json.load(file)
-
 from datasets import load_dataset
 id_dataset = 'Kudod/Thesis'
 dataset = load_dataset(id_dataset, cache_dir=f'./dataset/{id_dataset}')
